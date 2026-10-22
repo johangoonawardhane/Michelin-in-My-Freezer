@@ -4,32 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#08091b">
-<title>Michelin in My Freezer | Your Kitchen, Reimagined</title>
+<title>Michelin in My Freezer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
 <style>
-:root{--blue:#35e5ff;--purple:#9d7cff;--pink:#ff59d6;--bg:#08091b;--panel:#10152b;--text:#f7f5ff;--muted:#b6bddb;--border:#8e77ff80;--gold:#ffd88a}
+:root{--blue:#35e5ff;--purple:#9d7cff;--pink:#ff59d6;--bg:#08091b;--panel:#10152b;--text:#f7f5ff;--muted:#b6bddb;--gold:#ffd88a}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--text);font:15px/1.65 "DM Sans",sans-serif;background:radial-gradient(ellipse at 4% 12%,#123b7d66,transparent 32%),radial-gradient(ellipse at 95% 23%,#8b1d8260,transparent 34%),var(--bg)}
 button,input,textarea,select{font:inherit}
 .shell{width:min(1120px,calc(100% - 34px));margin:auto}
 header{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:21px 0;border-bottom:1px solid #9d7cff45}
-.brand{font-weight:700;letter-spacing:2.3px;color:var(--blue);font-size:13px;line-height:1.2}
-.brand span{color:white;font-size:10px;letter-spacing:4px}
-.pill{border:1px solid var(--pink);border-radius:99px;padding:6px 12px;color:#ffd5f3;font-size:10px;letter-spacing:1.5px;text-transform:uppercase}
+.brand{font-weight:700;letter-spacing:2px;color:var(--blue);font-size:13px;line-height:1.2}
+.brand span{color:white;font-size:10px;letter-spacing:3px}
+.pill{border:1px solid var(--pink);border-radius:99px;padding:6px 12px;color:#ffd5f3;font-size:10px;letter-spacing:1px;text-transform:uppercase}
 .hero{display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:34px;padding:43px 0 35px}
-.eyebrow{color:var(--blue);font-size:10px;letter-spacing:2.7px;text-transform:uppercase;font-weight:700}
+.eyebrow{color:var(--blue);font-size:10px;letter-spacing:2.4px;text-transform:uppercase;font-weight:700}
 h1{font:clamp(43px,6vw,72px)/1.03 "Playfair Display",serif;letter-spacing:-1.7px;margin:13px 0 18px}
 h1 span{color:transparent;background:linear-gradient(95deg,var(--blue),var(--purple),var(--pink));background-clip:text}
 p{color:#d5d9ed}
 .hero p{max-width:510px}
 .hero-image{position:relative;height:330px;overflow:hidden;border-radius:24px;border:1px solid var(--purple);box-shadow:0 0 32px #35e5ff25,0 0 65px #ff59d624;background:#171a31}
-.hero-image img{width:100%;height:100%;display:block;object-fit:cover}
+.hero-image img{width:100%;height:100%;object-fit:cover;display:block}
 .hero-image:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,#08091bee)}
 .hero-caption{position:absolute;z-index:1;bottom:17px;left:20px;font:24px "Playfair Display",serif}
-.neon-line{height:2px;background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));box-shadow:0 0 14px #9d7cff55;margin:0 0 23px}
+.neon-line{height:2px;background:linear-gradient(90deg,var(--blue),var(--purple),var(--pink));margin:0 0 23px}
 .panel{border:1px solid #35e5ff70;border-radius:20px;padding:25px;background:linear-gradient(135deg,#0c1730f2,#15102bf5);box-shadow:0 0 30px #35e5ff12;margin-bottom:23px}
 h2{font-size:19px;margin:0 0 18px}
 .field{margin:0 0 19px}
@@ -41,27 +40,27 @@ select option{background:#10152b;color:white}
 .hint{color:var(--muted);font-size:11px;margin-top:5px}
 .styles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
 .style-choice input{position:absolute;opacity:0;pointer-events:none}
-.style-choice label{margin:0;min-height:43px;display:flex;justify-content:center;align-items:center;text-align:center;border:1px solid #6f73b788;border-radius:30px;padding:9px 8px;cursor:pointer;font-size:11px;font-weight:600;transition:.18s}
-.style-choice input:checked+label{border-color:var(--blue);background:#35e5ff19;box-shadow:0 0 15px #35e5ff1e;color:white}
+.style-choice label{margin:0;min-height:43px;display:flex;justify-content:center;align-items:center;text-align:center;border:1px solid #6f73b788;border-radius:30px;padding:9px 8px;cursor:pointer;font-size:11px;font-weight:600}
+.style-choice input:checked+label{border-color:var(--blue);background:#35e5ff19;box-shadow:0 0 15px #35e5ff1e}
 .style-choice label:hover{border-color:var(--pink)}
 .columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
 .allergy-box{padding:14px;border:1px solid #ff59d680;border-radius:13px;background:#ff59d609}
 .allergy-box label{color:#ffd2f3}
-.primary{display:block;width:100%;border:0;border-radius:30px;padding:15px 18px;background:linear-gradient(100deg,#ee45d6,#8958ff,#15cceb);box-shadow:0 0 24px #9d7cff39;color:white;font-size:12px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:transform .2s,filter .2s}
-.primary:hover{filter:brightness(1.13);transform:translateY(-1px)}
+.primary{display:block;width:100%;border:0;border-radius:30px;padding:15px 18px;background:linear-gradient(100deg,#ee45d6,#8958ff,#15cceb);color:white;font-size:12px;font-weight:700;letter-spacing:1px;cursor:pointer;transition:.2s}
+.primary:hover{filter:brightness(1.12);transform:translateY(-1px)}
 .primary:disabled{opacity:.6;cursor:wait;transform:none}
 .small{text-align:center;color:var(--muted);font-size:10px;margin:10px 0 0}
 .error{color:#ff9be7;font-size:12px;margin:10px 0 0;min-height:1px}
 .result-panel{display:none;scroll-margin-top:15px}
-.result-panel.visible{display:block;animation:rise .35s ease-out}
+.result-panel.visible{display:block;animation:rise .3s ease-out}
 @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 .result-top{display:flex;justify-content:space-between;align-items:center;gap:15px;margin-bottom:19px}
 .result-top h2{margin:0}
 .version-tag{font-size:10px;color:#e2d8ff;border:1px solid var(--purple);border-radius:30px;padding:5px 10px;white-space:nowrap}
 .result-grid{display:grid;grid-template-columns:minmax(250px,.8fr) 1.2fr;gap:26px}
 .recipe-photo-wrap{align-self:start;position:sticky;top:18px}
-.recipe-photo{width:100%;height:330px;display:block;object-fit:cover;border-radius:16px;border:1px solid var(--purple);background:#08091b;box-shadow:0 0 22px #9d7cff19}
-.photo-status{font-size:11px;color:var(--muted);line-height:1.5;margin-top:8px;min-height:32px;overflow-wrap:anywhere}
+.recipe-photo{width:100%;height:330px;display:block;object-fit:cover;border-radius:16px;border:1px solid var(--purple);background:#08091b}
+.photo-status{font-size:11px;color:var(--muted);margin-top:8px;min-height:32px;overflow-wrap:anywhere}
 .photo-status a{color:#b8dfff}
 .recipe-title{font:clamp(28px,4vw,40px)/1.15 "Playfair Display",serif;margin:6px 0 10px}
 .recipe-intro{margin:0 0 15px;color:#d5d9ed}
@@ -74,7 +73,7 @@ select option{background:#10152b;color:white}
 .recipe-section ul,.recipe-section ol{padding-left:22px;margin:0}
 .recipe-section li{padding-left:3px;margin-bottom:8px;color:#e0e2f1}
 .note{border-left:2px solid var(--pink);background:#9d7cff12;padding:12px 14px;border-radius:0 10px 10px 0;font-size:11px;color:#ded8f3;margin:19px 0}
-.secondary{width:100%;margin-top:15px;background:#10152b;border:1px solid var(--pink);color:#ffe4fa;box-shadow:0 0 18px #ff59d615}
+.secondary{width:100%;margin-top:15px;background:#10152b;border:1px solid var(--pink);color:#ffe4fa}
 footer{padding:23px 0 34px;border-top:1px solid #9d7cff45;color:var(--muted);font-size:10px;margin-top:10px}
 footer strong{color:white;letter-spacing:1.8px}
 @media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:28px;gap:20px}.hero-image{height:260px}.panel{padding:18px}.result-grid{grid-template-columns:1fr}.recipe-photo-wrap{position:static}.recipe-photo{height:250px}.styles{grid-template-columns:repeat(2,minmax(0,1fr))}.columns{grid-template-columns:1fr;gap:0}.result-top{align-items:flex-start}.recipe-title{font-size:32px}}
@@ -88,402 +87,439 @@ footer strong{color:white;letter-spacing:1.8px}
 </header>
 
 <main class="shell">
-  <section class="hero">
-    <div>
-      <div class="eyebrow">Real ingredients. Extraordinary plates.</div>
-      <h1>Your kitchen.<br><span>Reimagined.</span></h1>
-      <p>Tell us what's in your fridge, freezer or cupboards. Get a recipe idea, a matching food-photo search, and more ambitious techniques when you give yourself more time.</p>
-      <div class="eyebrow">✦ Your ingredients. Your rules.</div>
-    </div>
-    <div class="hero-image">
-      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="Colourful bowl of food inspiration" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85'">
-      <div class="hero-caption">Make everyday extraordinary.</div>
-    </div>
-  </section>
+<section class="hero">
+  <div>
+    <div class="eyebrow">Real ingredients. Extraordinary plates.</div>
+    <h1>Your kitchen.<br><span>Reimagined.</span></h1>
+    <p>Tell us what's in your fridge, freezer or cupboards. Get a recipe idea, a matching food-photo search, and more ambitious techniques when you give yourself more time.</p>
+    <div class="eyebrow">✦ Your ingredients. Your rules.</div>
+  </div>
+  <div class="hero-image">
+    <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85" alt="Colourful bowl of food inspiration" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85'">
+    <div class="hero-caption">Make everyday extraordinary.</div>
+  </div>
+</section>
 
-  <div class="neon-line"></div>
+<div class="neon-line"></div>
 
-  <form class="panel" id="recipeForm">
-    <h2>✧ Let's create something incredible</h2>
+<form class="panel" id="recipeForm">
+  <h2>✧ Let's create something incredible</h2>
+  <div class="field">
+    <label for="ingredients">What ingredients do you have? *</label>
+    <textarea id="ingredients" required maxlength="1200" placeholder="e.g. chicken, potatoes, spinach, garlic, rice"></textarea>
+    <div class="hint">Separate ingredients with commas, semicolons or new lines. Unknown words are rejected.</div>
+  </div>
+
+  <div class="field">
+    <div class="field-label">What are you in the mood for?</div>
+    <div class="styles">
+      <div class="style-choice"><input type="radio" name="style" id="styleAny" value="Surprise me" checked><label for="styleAny">✧ Surprise me</label></div>
+      <div class="style-choice"><input type="radio" name="style" id="styleFried" value="Fried & crispy"><label for="styleFried">♨ Fried &amp; crispy</label></div>
+      <div class="style-choice"><input type="radio" name="style" id="styleGrilled" value="Grilled"><label for="styleGrilled">♨ Grilled</label></div>
+      <div class="style-choice"><input type="radio" name="style" id="styleRoasted" value="Roasted"><label for="styleRoasted">▣ Roasted</label></div>
+      <div class="style-choice"><input type="radio" name="style" id="styleCreamy" value="Creamy & comforting"><label for="styleCreamy">♡ Creamy &amp; comforting</label></div>
+      <div class="style-choice"><input type="radio" name="style" id="styleFresh" value="Fresh & light"><label for="styleFresh">✿ Fresh &amp; light</label></div>
+    </div>
+    <div class="hint">Frying is optional: choose it only when you fancy something crispy.</div>
+  </div>
+
+  <div class="field">
+    <label for="dislikes">Which foods don't you like?</label>
+    <input type="text" id="dislikes" placeholder="e.g. mushrooms, olives, tomatoes">
+    <div class="hint">We'll try to leave these ingredients out.</div>
+  </div>
+
+  <div class="field allergy-box">
+    <label for="allergies">⚠ Allergies or ingredients you must avoid</label>
+    <input type="text" id="allergies" placeholder="e.g. peanuts, milk, eggs, sesame">
+    <div class="hint">This is not an allergy-safety system. Always check labels and prevent cross-contact.</div>
+  </div>
+
+  <div class="columns">
     <div class="field">
-      <label for="ingredients">What ingredients do you have? *</label>
-      <textarea id="ingredients" required maxlength="1200" placeholder="e.g. chicken, potatoes, spinach, garlic, rice"></textarea>
-      <div class="hint">Separate ingredients with commas. The recipe uses your list, not a paid AI service.</div>
+      <label for="diet">Dietary preference</label>
+      <select id="diet">
+        <option>None</option><option>Vegetarian</option><option>Vegan</option>
+        <option>Gluten-free</option><option>Dairy-free</option><option>Pescatarian</option>
+      </select>
     </div>
-
     <div class="field">
-      <div class="field-label">What are you in the mood for?</div>
-      <div class="styles">
-        <div class="style-choice"><input type="radio" name="style" id="styleAny" value="Surprise me" checked><label for="styleAny">✧ Surprise me</label></div>
-        <div class="style-choice"><input type="radio" name="style" id="styleFried" value="Fried & crispy"><label for="styleFried">♨ Fried &amp; crispy</label></div>
-        <div class="style-choice"><input type="radio" name="style" id="styleGrilled" value="Grilled"><label for="styleGrilled">♨ Grilled</label></div>
-        <div class="style-choice"><input type="radio" name="style" id="styleRoasted" value="Roasted"><label for="styleRoasted">▣ Roasted</label></div>
-        <div class="style-choice"><input type="radio" name="style" id="styleCreamy" value="Creamy & comforting"><label for="styleCreamy">♡ Creamy &amp; comforting</label></div>
-        <div class="style-choice"><input type="radio" name="style" id="styleFresh" value="Fresh & light"><label for="styleFresh">✿ Fresh &amp; light</label></div>
-      </div>
-      <div class="hint">Frying is optional: choose it only when you fancy something crispy.</div>
+      <label for="servings">Servings</label>
+      <select id="servings"><option>1</option><option selected>2</option><option>4</option><option>6</option><option>8</option></select>
     </div>
-
     <div class="field">
-      <label for="dislikes">Which foods don't you like?</label>
-      <input type="text" id="dislikes" placeholder="e.g. mushrooms, olives, tomatoes">
-      <div class="hint">We'll try to leave these ingredients out.</div>
+      <label for="time">Time available</label>
+      <select id="time">
+        <option value="30">30 min · Quick</option>
+        <option value="45">45 min · More depth</option>
+        <option value="60" selected>60 min · Chef's touch</option>
+        <option value="90">90 min · Full experience</option>
+      </select>
     </div>
+  </div>
+  <button class="primary" id="createButton" type="submit">✦ CREATE MY FINE-DINING RECIPE →</button>
+  <p class="small">Free to use · No account · No API key</p>
+  <div class="error" id="error" role="alert"></div>
+</form>
 
-    <div class="field allergy-box">
-      <label for="allergies">⚠ Allergies or ingredients you must avoid</label>
-      <input type="text" id="allergies" placeholder="e.g. peanuts, milk, eggs, sesame">
-      <div class="hint">This is a simple text filter, not an allergy-safety system. Always check every label and prevent cross-contact.</div>
+<section class="panel result-panel" id="resultPanel" aria-live="polite" aria-busy="false">
+  <div class="result-top"><h2>✧ Your kitchen creation</h2><div class="version-tag" id="versionTag">VERSION 01</div></div>
+  <div class="result-grid">
+    <div class="recipe-photo-wrap">
+      <img class="recipe-photo" id="recipeImage" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=85" alt="Food photo matching your recipe">
+      <div class="photo-status" id="photoStatus">A matching food photo will be searched for when you create your recipe.</div>
     </div>
-
-    <div class="columns">
-      <div class="field"><label for="diet">Dietary preference</label><select id="diet"><option>None</option><option>Vegetarian</option><option>Vegan</option><option>Gluten-free</option><option>Dairy-free</option><option>Pescatarian</option></select></div>
-      <div class="field"><label for="servings">Servings</label><select id="servings"><option>1</option><option selected>2</option><option>4</option><option>6</option><option>8</option></select></div>
-      <div class="field"><label for="time">Time available</label><select id="time"><option value="30">30 min · Quick</option><option value="45">45 min · More depth</option><option value="60" selected>60 min · Chef's touch</option><option value="90">90 min · Full experience</option></select></div>
-    </div>
-    <button class="primary" id="createButton" type="submit">✦ CREATE MY FINE-DINING RECIPE →</button>
-    <p class="small">Free to use · No account · No API key</p>
-    <div class="error" id="error" role="alert"></div>
-  </form>
-
-  <section class="panel result-panel" id="resultPanel" aria-live="polite" aria-busy="false">
-    <div class="result-top"><h2>✧ Your kitchen creation</h2><div class="version-tag" id="versionTag">VERSION 01</div></div>
-    <div class="result-grid">
-      <div class="recipe-photo-wrap">
-        <img class="recipe-photo" id="recipeImage" src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1000&q=85" alt="Food photo for your recipe">
-        <div class="photo-status" id="photoStatus">A matching food photo will be searched for when you create your recipe.</div>
-      </div>
-      <article>
-        <div class="eyebrow" id="resultEyebrow">YOUR RECIPE</div>
-        <h2 class="recipe-title" id="recipeTitle">Your next signature dish</h2>
-        <p class="recipe-intro" id="recipeIntro">Enter your ingredients above and let the kitchen creativity begin.</p>
-        <div class="chips" id="recipeChips"></div>
-        <div class="quality"><strong id="qualityTitle">Your time, your level</strong><p id="qualityText">More time lets the recipe build extra layers of flavour, texture and plating.</p></div>
-        <section class="recipe-section"><h3>What you'll use</h3><ul id="recipeIngredients"></ul></section>
-        <section class="recipe-section"><h3>The method</h3><ol id="recipeSteps"></ol></section>
-        <div class="note" id="chefNote">The recipe builder uses simple rules. It does not invent a guaranteed exact match for every possible ingredient combination.</div>
-        <button class="primary secondary" id="anotherButton" type="button">↻ CREATE ANOTHER VERSION</button>
-      </article>
-    </div>
-  </section>
+    <article>
+      <div class="eyebrow" id="resultEyebrow">YOUR RECIPE</div>
+      <h2 class="recipe-title" id="recipeTitle">Your next signature dish</h2>
+      <p class="recipe-intro" id="recipeIntro">Enter your ingredients above and let the kitchen creativity begin.</p>
+      <div class="chips" id="recipeChips"></div>
+      <div class="quality"><strong id="qualityTitle">Your time, your level</strong><p id="qualityText">More time lets the recipe build extra layers of flavour, texture and plating.</p></div>
+      <section class="recipe-section"><h3>What you'll use</h3><ul id="recipeIngredients"></ul></section>
+      <section class="recipe-section"><h3>The method</h3><ol id="recipeSteps"></ol></section>
+      <div class="note" id="chefNote">This free recipe builder uses a built-in ingredient dictionary and rule-based recipes.</div>
+      <button class="primary secondary" id="anotherButton" type="button">↻ CREATE ANOTHER VERSION</button>
+    </article>
+  </div>
+</section>
 </main>
 
-<footer class="shell"><strong>MICHELIN IN MY FREEZER</strong><br>Independent fine-dining inspiration. Not affiliated with or endorsed by the Michelin Guide. Recipe ideas are rule-based; check safe cooking guidance and food labels.</footer>
+<footer class="shell">
+  <strong>MICHELIN IN MY FREEZER</strong><br>
+  Independent fine-dining inspiration. Not affiliated with or endorsed by the Michelin Guide. Recipe ideas are rule-based; check safe cooking guidance and food labels.
+</footer>
 
 <script>
 const $ = id => document.getElementById(id);
-const state = { version: 0, lastPhotoUrl: "", seenPhotoUrls: [], requestNumber: 0 };
-const splitList = text => text.split(/[,;\n]+/).map(value => value.trim()).filter(Boolean);
-const lower = value => value.toLocaleLowerCase();
-const containsAny = (value, words) => words.some(word => lower(value).includes(word));
+const state = {version:0, request:0, seenPhotos:[]};
+const splitList = text => text.split(/[,;\n]+/).map(s=>s.trim()).filter(Boolean);
+const lower = s => s.toLocaleLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"");
 
-const foodGroups = {
-  meat: ["chicken","beef","pork","bacon","ham","lamb","turkey","sausage","duck","steak","mince","liver"],
-  fish: ["fish","salmon","tuna","prawn","shrimp","cod","anchovy","sardine","mackerel","trout","haddock","seafood","crab","lobster"],
-  dairy: ["milk","cheese","cream","butter","yoghurt","yogurt","parmesan","mozzarella","whey"],
-  eggs: ["egg","eggs","mayonnaise","mayo"],
-  gluten: ["wheat","flour","bread","pasta","noodles","couscous","barley","rye","seitan","breadcrumbs"],
-  animal: ["honey","gelatin","gelatine"]
-};
+const foodWords = `
+apple apples pear pears banana bananas orange oranges lemon lemons lime limes grapefruit mandarin clementine mango mangoes pineapple papaya kiwi strawberry strawberries blueberry blueberries raspberry raspberries blackberry blackberries cranberry cranberries cherry cherries peach peaches nectarine plum plums apricot apricots grape grapes watermelon melon fig dates pomegranate guava lychee coconut avocado olives tomato tomatoes potato potatoes sweet potato yam cassava yuca taro plantain pepper bell pepper chilli chili jalapeno cucumber courgette zucchini aubergine eggplant carrot parsnip turnip swede beetroot beet radish daikon onion onions shallot leek garlic ginger turmeric galangal lemongrass celery fennel broccoli cauliflower cabbage brussels sprouts kale spinach lettuce rocket arugula watercress chard asparagus artichoke peas mange tout snow peas sugar snap peas green beans runner beans broad beans butter beans kidney beans black beans cannellini beans borlotti beans chickpeas lentils split peas mung beans edamame soybean tofu tempeh mushrooms corn sweetcorn maize sprouts seaweed nori kombu wakame
+`.trim().split(/\s+/);
 
-const fallbackPhotos = {
-  chicken: ["https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85"],
-  fish: ["https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85"],
-  steak: ["https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85"],
-  pasta: ["https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=85"],
-  crispy: ["https://images.unsplash.com/photo-1570552896463-bfae371b9a39?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=85"],
-  vegetables: ["https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=85"],
-  general: ["https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85"]
-};
+const commonFoods = `
+chicken turkey duck goose quail pheasant rabbit beef steak sirloin ribeye brisket veal pork bacon ham prosciutto pancetta chorizo salami pepperoni sausage lamb mutton goat venison liver kidney eggs salmon tuna cod haddock pollock tilapia trout mackerel sardine anchovy herring bass bream halibut monkfish hake swordfish catfish plaice sole eel prawns shrimp crayfish crab lobster mussels clams oysters scallops squid octopus cuttlefish fish tofu paneer halloumi feta mozzarella cheddar parmesan pecorino ricotta mascarpone cream cheese cottage cheese blue cheese brie camembert milk cream butter yogurt yoghurt ghee kefir labneh quark ice cream flour rice oats quinoa barley farro millet sorghum amaranth teff couscous polenta semolina pasta spaghetti linguine fettuccine tagliatelle penne fusilli farfalle rigatoni macaroni ravioli tortellini gnocchi lasagne lasagna noodles bread bagel baguette brioche croissant pita naan chapati roti paratha lentils dal dhal hummus falafel kimchi sauerkraut miso gochujang tofu tempeh edamame tahini harissa tamarind ghee cassava fufu plantain okra yams egusi ackee callaloo breadfruit saltfish callaloo
+`.trim().split(/\s+/);
 
-const styles = {
-  "Surprise me": {
-    titles: ["Signature skillet plate", "Golden-edged kitchen special", "Chef's choice composition", "Colour-and-contrast plate"],
-    openings: ["Build a strong golden sear first, then keep the final plate balanced.", "Treat the main ingredient as the centrepiece and let the supporting ingredients bring contrast.", "Cook the ingredients in stages so each keeps its own texture.", "Aim for contrast: one deeply coloured element, one tender element, and a clean finish."],
-    core: ["Warm a suitable pan over medium heat with a little oil, if you have and can use it.", "Cook the firmest ingredients first; give them room to colour instead of crowding the pan.", "Add quicker-cooking ingredients later and stir or turn as needed.", "Check all ingredients are safely cooked and tender before serving."],
-    finish: ["Use any safe pan juices to finish the dish, and wipe the rim before serving.", "Arrange the ingredients in distinct groups rather than piling everything in the centre.", "Taste and adjust with suitable seasonings you already have, then plate neatly.", "Keep the main ingredient visible and use the remaining ingredients for colour and height."]
-  },
-  "Fried & crispy": {
-    titles: ["Crisp-edged skillet plate", "Golden crunch composition", "Pan-crisped signature dish", "Crunch-and-tender plate"],
-    openings: ["Dry ingredients well before they hit the pan; moisture prevents browning.", "Cut ingredients evenly and dry their surfaces for better colour.", "Work in batches if needed: a crowded pan steams food rather than crisping it.", "Make the crisp element the star and keep softer ingredients separate until plating."],
-    core: ["Heat a suitable pan over medium to medium-high heat with a little suitable oil, if available.", "Place the ingredients in one layer and leave them undisturbed long enough to brown.", "Turn when golden; cook thicker pieces through and lower the heat if they colour too quickly.", "Do not overcrowd the pan. Keep cooked pieces on a clean plate while later batches finish."],
-    finish: ["Serve promptly while the crisp edges are still at their best.", "Keep any softer side ingredients away from the crisp surface until the last moment.", "Use a little of the pan's flavourful cooking juice, if suitable, beside the crisp element rather than over it.", "For a polished finish, arrange the crunchy pieces in a loose stack with breathing room around them."]
-  },
-  "Grilled": {
-    titles: ["Char-marked centrepiece", "Grilled colour-and-contrast plate", "Flame-inspired signature dish", "Grill-marked chef's plate"],
-    openings: ["Cut the main ingredients evenly so they cook at a similar pace.", "Preheat the grill or grill pan and lightly prepare the ingredients for even contact.", "Keep quicker-cooking vegetables separate so they do not overcook while the main ingredient finishes.", "Create colour from the grill, then let the natural flavour of the ingredients lead."],
-    core: ["Heat the grill or grill pan; cook in batches so the surface stays hot.", "Turn when clear grill marks or golden colour have formed.", "Move ingredients away from direct heat if the outside colours before the inside is cooked.", "Check that all food is safely cooked; poultry should reach 75°C at the thickest point."],
-    finish: ["Let appropriate meat rest before slicing, and keep raw-food utensils separate from cooked food.", "Slice the main ingredient neatly and angle the pieces to show the browned surface.", "Use suitable juices from the cooked ingredients to keep the plate connected and flavourful.", "Place grilled pieces beside—not beneath—any moist garnish to preserve the charred texture."]
-  },
-  "Roasted": {
-    titles: ["Slow-roasted colour plate", "Golden oven-roasted composition", "Roast-and-rest signature plate", "Caramelised tray-to-table dish"],
-    openings: ["Heat the oven to 200°C (180°C fan) and cut firm vegetables into even pieces.", "Keep ingredients in a single layer so they roast rather than steam.", "Give each ingredient enough space for its edges to caramelise.", "Start with the ingredients that need longest in the oven and add quicker ones later."],
-    core: ["Use a suitable tray and a little oil if you have and can use it.", "Turn firm vegetables halfway through and check tenderness with a fork.", "Follow reliable cooking guidance for meat or fish and check it is safely cooked.", "If the tray browns too quickly, reduce the heat slightly and continue until cooked through."],
-    finish: ["Rest suitable roasted meat before slicing; leave vegetables briefly so steam can escape.", "Spoon a little suitable tray juice beside the main ingredient, not over crisp edges.", "Arrange the roast pieces by size and colour to make the plate feel deliberate.", "Save a few of the best-coloured pieces for the top of the final arrangement."]
-  },
-  "Creamy & comforting": {
-    titles: ["Silky comfort bowl", "Creamy layered skillet", "Velvet-texture kitchen plate", "Comfort-with-contrast bowl"],
-    openings: ["Cut ingredients evenly and soften the firmest ingredients first.", "Build the flavour in layers instead of adding everything at once.", "Keep the heat moderate once the creamy element is added.", "Balance a soft, comforting texture with a few distinct pieces of your ingredients."],
-    core: ["Warm a suitable pan with a little oil if available, then cook the firm ingredients first.", "Add a small splash of water or suitable stock if the pan becomes dry.", "Lower the heat before stirring in a creamy ingredient that fits your diet and allergies.", "Simmer gently until ingredients are tender and everything is safely cooked."],
-    finish: ["If the sauce is too thick, loosen it with a spoonful of water; if thin, simmer gently.", "Keep a few distinct pieces aside to place on top for texture.", "Serve in a warm bowl and swirl the sauce around the main ingredients.", "Wipe the rim and finish with a restrained arrangement of the ingredients you have."]
-  },
-  "Fresh & light": {
-    titles: ["Fresh balanced plate", "Bright garden-style composition", "Clean and colourful plate", "Light chef's arrangement"],
-    openings: ["Wash and dry produce well, then cut it into neat bite-sized pieces.", "Keep fresh ingredients crisp and cook only what needs cooking.", "Use contrasting shapes and colours to make the arrangement feel intentional.", "Keep raw and ready-to-eat ingredients safely separated during preparation."],
-    core: ["Cook any ingredient that needs cooking and let it cool slightly if serving with fresh produce.", "If you have suitable oil and lemon juice or vinegar, mix a little dressing separately.", "Add dressing gradually just before serving so the fresh ingredients stay bright.", "Check seasoning with ingredients you can safely eat and avoid excess dressing."],
-    finish: ["Arrange ingredients in small groups, leaving a little visible space on the plate.", "Cut a few pieces on an angle to add variety in shape.", "Add any dressing around the plate or lightly over the ingredients just before serving.", "Keep delicate fresh elements on top so their colour stays visible."]
-  }
-};
+const multiFoods = `
+chicken breast|chicken thigh|ground beef|minced beef|beef mince|pork belly|pork chop|lamb chop|duck breast|smoked salmon|sea bass|sea bream|fish fingers|fish fillet|king prawns|tiger prawns|spring onion|red onion|white onion|green onion|bell pepper|red pepper|green pepper|yellow pepper|sweet potato|cherry tomato|sun dried tomatoes|baby spinach|baby corn|coconut milk|coconut cream|oat milk|almond milk|soya milk|soy milk|whole milk|skimmed milk|greek yogurt|greek yoghurt|cream cheese|double cream|single cream|sour cream|creme fraiche|peanut butter|almond butter|olive oil|vegetable oil|sunflower oil|rapeseed oil|canola oil|sesame oil|coconut oil|fish sauce|soy sauce|soya sauce|oyster sauce|hoisin sauce|hot sauce|chilli sauce|chili sauce|sweet chilli sauce|sweet chili sauce|tomato paste|tomato puree|tomato sauce|barbecue sauce|bbq sauce|worcestershire sauce|dijon mustard|english mustard|wholegrain mustard|mayonnaise|mayo|basil pesto|red pesto|mango chutney|apple cider vinegar|balsamic vinegar|red wine vinegar|white wine vinegar|rice vinegar|white vinegar|vegetable stock|chicken stock|beef stock|fish stock|stock cube|tomato soup|coconut aminos|curry paste|thai red curry paste|thai green curry paste|miso paste|tamarind paste|tom yum paste|shrimp paste|chilli crisp|chili crisp|black bean sauce|black bean paste|peanut sauce|satay sauce|plum sauce|cranberry sauce|apple sauce|lemon juice|lime juice|orange juice|lemon zest|lime zest|orange zest|canned tomatoes|tinned tomatoes|chopped tomatoes|canned beans|tinned beans|baked beans|canned chickpeas|tinned chickpeas|canned lentils|tinned lentils|canned tuna|tinned tuna|canned corn|tinned corn|canned coconut milk|tinned coconut milk|dried porcini|dried shiitake|dried cranberries|dried apricots|dried figs|dried mango|dried fruit|coconut flakes|desiccated coconut|coconut flour|coconut sugar|brown sugar|white sugar|caster sugar|icing sugar|powdered sugar|demerara sugar|muscovado sugar|baking powder|baking soda|bicarbonate of soda|cream of tartar|vanilla extract|almond extract|rose water|orange blossom water|cocoa powder|dark chocolate|milk chocolate|white chocolate|chocolate chips|rice paper|spring roll wrappers|wonton wrappers|dumpling wrappers|bao buns|rice noodles|egg noodles|glass noodles|instant noodles|rice cakes|puff pastry|shortcrust pastry|filo pastry|phyllo pastry|pita bread|flatbread|sourdough bread|wholemeal bread|white bread|breadcrumbs|panko breadcrumbs|tortilla chips|corn tortilla|flour tortilla|naan bread|cream of tartar|curry leaves|kaffir lime leaves|makrut lime leaves|thai basil|holy basil|bay leaf|bay leaves|fresh coriander|ground coriander|coriander seeds|cumin seeds|ground cumin|garam masala|curry powder|chilli powder|chili powder|paprika|smoked paprika|cayenne pepper|black pepper|white pepper|pink peppercorn|sichuan pepper|five spice|mixed herbs|mixed spice|italian seasoning|herbes de provence|zaatar|sumac|ras el hanout|berbere spice|taco seasoning|onion powder|garlic powder|mustard powder|nutritional yeast|dried yeast|instant yeast|active dry yeast|fresh yeast|plain flour|all purpose flour|self raising flour|bread flour|cake flour|wholemeal flour|whole wheat flour|almond flour|oat flour|rice flour|buckwheat flour|tapioca flour|chickpea flour|gram flour|semolina flour|cornflour|corn starch|cornstarch|potato starch|tapioca starch|rolled oats|porridge oats|steel cut oats|oatmeal|basmati rice|jasmine rice|brown rice|white rice|wild rice|sushi rice|arborio rice|short grain rice|long grain rice|risotto rice|bulgur wheat|bulgur|pearl barley|glutinous rice|sticky rice|moong dal|toor dal|urad dal|red lentils|green lentils|black lentils|kidney beans|black beans|white beans|cannellini beans|butter beans|pinto beans|borlotti beans|navy beans|chickpeas|split peas|black eyed peas|baked beans|falafel mix|preserved lemon|tamarind paste|curry leaves|pandan leaf|pandan leaves|rice paper|gochugaru|doenjang|ssamjang|shichimi togarashi|furikake|kombu dashi|dashi stock|black vinegar|shaoxing wine|fermented black beans|chipotle peppers|ancho chilli|ancho chili|guajillo chilli|guajillo chili|masa harina|hominy|arepa flour|harina pan|achiote|annatto|epazote|cotija|queso fresco|tomatillo|mole paste|sofrito|sazon|piri piri|peri peri|injera|cassava flour|yuca flour|plantain flour|ground crayfish|locust beans|melon seed|palm nut cream|yassa marinade|suya spice|alligator pepper|bitterleaf|bitter leaf|shea butter|dried fish|smoked fish|dried shrimp|dried prawns|bonito flakes|shirataki noodles|tteok|natto|ponzu|yuzu kosho|shiso|perilla|sujuk|nduja|bottarga|porchetta|molokhia|foul medames|ful medames|tigernut|tiger nut|groundnut|baobab powder|date molasses|dried lime|black lime|moringa powder|rice cakes|nori|wakame|dulse|agar agar|konjac
+`.split("|");
 
-const timeLevels = {
-  30: {name:"Clever & quick", note:"A focused recipe: one main technique, fewer pans, and one simple finishing detail. The aim is good flavour without unnecessary steps.", extra:["Finish with a neat arrangement and serve immediately."]},
-  45: {name:"More depth", note:"Extra time adds a separate texture or side, plus a short pan-juice finish. It is a step up from a quick one-pan meal without becoming complicated.", extra:["If time allows, cook one supporting ingredient separately to preserve its colour and texture.","Use the pan's browned bits with a small splash of water to create a quick finishing juice, if suitable."]},
-  60: {name:"Chef's touch", note:"A more considered build: stage the cooking, create a distinct sauce or finishing element from your ingredients, and plate with contrast. More time does not guarantee perfection, but it gives you more control.", extra:["Prepare the supporting ingredients before the final cooking stage, then keep them warm or crisp as appropriate.","Build a quick pan sauce or concentrated cooking juice using suitable ingredients already listed; simmer gently and taste.","Rest suitable cooked meat before slicing and let hot components settle briefly before plating."]},
-  90: {name:"Full fine-dining-inspired experience", note:"The most involved option: staged cooking, a separate component, a more developed sauce or puree only if your listed ingredients support it, resting, and deliberate plating. This is the fullest technique plan in this free recipe builder.", extra:["Set up a simple mise en place: cut and group the ingredients before turning on the heat.","Cook the longest-running component first, then prepare a second texture or side in a separate pan or tray if suitable.","Build a deeper pan sauce or concentrated cooking liquid from the ingredients already listed; let it reduce gently without burning.","Rest suitable meat, keep crisp components uncovered, and bring the elements together only just before serving.","Plate in layers: sauce or soft component first if you have one, main ingredient next, and contrasting textures last. Wipe the rim before serving."]}
-};
+const ingredientSet = new Set([...foodWords,...commonFoods,...multiFoods].map(x=>lower(x.trim())).filter(Boolean));
 
-function chooseStyle(){ return document.querySelector('input[name="style"]:checked').value; }
-function getFilteredIngredients(){
-  const raw = splitList($("ingredients").value);
-  const dislikes = splitList($("dislikes").value).map(lower);
-  const allergies = splitList($("allergies").value).map(lower);
-  const diet = $("diet").value;
-  let ingredients = raw.filter(item => {
-    const name = lower(item);
-    return !dislikes.some(word => name.includes(word) || word.includes(name)) &&
-      !allergies.some(word => name.includes(word) || word.includes(name));
-  });
-  if (diet === "Vegetarian" || diet === "Vegan") ingredients = ingredients.filter(item => !containsAny(item, foodGroups.meat) && !containsAny(item, foodGroups.fish));
-  if (diet === "Pescatarian") ingredients = ingredients.filter(item => !containsAny(item, foodGroups.meat));
-  if (diet === "Vegan" || diet === "Dairy-free") ingredients = ingredients.filter(item => !containsAny(item, foodGroups.dairy) && !containsAny(item, foodGroups.eggs) && (diet !== "Vegan" || !containsAny(item, foodGroups.animal)));
-  if (diet === "Gluten-free") ingredients = ingredients.filter(item => !containsAny(item, foodGroups.gluten));
-  return ingredients;
+const nonFood = new Set(`
+knife knives fork forks spoon spoons teaspoon teaspoons tablespoon tablespoons chopstick chopsticks plate plates bowl bowls cup cups mug mugs pan pans saucepan saucepans pot pots tray trays spatula spatulas tongs ladle ladles whisk whisks grater graters peeler peelers colander colanders sieve sieves strainer strainers rolling pin can opener bottle opener measuring cup measuring cups measuring jug blender blenders food processor mixer microwave oven hob stove air fryer fridge freezer cupboard chair table napkin paper plastic metal wood messy nonsense rubbish thing stuff words random
+`.trim().split(/\s+/));
+
+const prep = new Set(`
+fresh frozen dried chopped sliced diced minced grated shredded crushed peeled finely roughly coarsely thinly thickly cooked raw uncooked canned tinned drained rinsed boneless skinless smoked unsalted salted seedless pitted thawed defrosted leftover organic ripe unripe large small medium whole ground powdered granulated halved quartered deseeded deveined trimmed prepared washed
+`.trim().split(/\s+/));
+
+const units = new Set(`
+g gram grams kg kilogram kilograms mg ml millilitre millilitres milliliter milliliters l litre litres liter liters oz ounce ounces lb lbs pound pounds cup cups tbsp tablespoon tablespoons tsp teaspoon teaspoons pinch pinches handful handfuls sprig sprigs slice slices piece pieces can cans tin tins bunch bunches stalk stalks head heads clove cloves fillet fillets breast breasts thigh thighs
+`.trim().split(/\s+/));
+
+function normalizeIngredient(value){
+  let text=lower(value).replace(/[’']/g,"").replace(/&/g," and ").replace(/[^a-z0-9\s.-]/g," ").replace(/-/g," ").replace(/\s+/g," ").trim();
+  text=text.replace(/^\d+(?:\.\d+)?\s*/,"");
+  let words=text.split(" ").filter(Boolean);
+  while(words.length&&(prep.has(words[0])||units.has(words[0])||["of","a","an","the","some"].includes(words[0]))) words.shift();
+  while(words.length&&(prep.has(words[words.length-1])||["of","a","an","the"].includes(words[words.length-1]))) words.pop();
+  while(words.length&&units.has(words[0])) words.shift();
+  return words.join(" ").trim();
 }
-function getFoodCategory(items, style){
-  const all = items.join(" ").toLowerCase();
-  if (containsAny(all,["salmon","cod","prawn","shrimp","tuna","fish","trout","haddock","crab","lobster","mackerel"])) return "fish";
-  if (containsAny(all,["chicken","turkey","duck"])) return "chicken";
-  if (containsAny(all,["steak","beef","lamb","pork","bacon","sausage"])) return "steak";
-  if (containsAny(all,["pasta","spaghetti","linguine","penne","macaroni","noodles"])) return "pasta";
-  if (style === "Fried & crispy") return "crispy";
-  if (containsAny(all,["potato","carrot","broccoli","cauliflower","spinach","courgette","zucchini","aubergine","eggplant","pepper","tomato","mushroom","lentil","chickpea","beans","tofu"])) return "vegetables";
+
+function forms(name){
+  const output=new Set([name]);
+  const words=name.split(" ");
+  const last=words.pop();
+  const prefix=words.length?words.join(" ")+" ":"";
+  const irregular={potatoes:"potato",tomatoes:"tomato",leaves:"leaf",berries:"berry",strawberries:"strawberry",blueberries:"blueberry",raspberries:"raspberry",cherries:"cherry",mangoes:"mango",chilies:"chili",chillies:"chilli",knives:"knife",loaves:"loaf"};
+  if(irregular[last]) output.add(prefix+irregular[last]);
+  if(last.endsWith("ies")&&last.length>3) output.add(prefix+last.slice(0,-3)+"y");
+  if(last.endsWith("s")&&!last.endsWith("ss")&&last.length>2) output.add(prefix+last.slice(0,-1));
+  return [...output];
+}
+
+function isKnown(item){
+  const normalized=normalizeIngredient(item);
+  if(!normalized||nonFood.has(normalized)) return false;
+  return forms(normalized).some(form=>ingredientSet.has(form));
+}
+
+const foodGroups={
+  meat:"chicken turkey duck goose quail pheasant rabbit beef steak veal pork bacon ham prosciutto pancetta chorizo salami pepperoni sausage lamb mutton goat venison".split(" "),
+  fish:"fish salmon tuna cod haddock pollock tilapia trout mackerel sardine anchovy herring bass bream halibut monkfish hake swordfish catfish plaice sole eel prawn shrimp crayfish crab lobster mussel clam oyster scallop squid octopus".split(" "),
+  dairy:"milk cheese cream butter yogurt yoghurt parmesan mozzarella cheddar feta ricotta whey ghee".split(" "),
+  gluten:"wheat flour bread pasta noodle couscous barley rye seitan breadcrumb".split(" ")
+};
+
+const recipes={
+"Surprise me":{
+titles:["Signature skillet plate","Golden-edged kitchen special","Chef's choice composition","Colour-and-contrast plate"],
+open:["Build a golden sear first, then keep the final plate balanced.","Treat the main ingredient as the centrepiece and supporting ingredients as contrast.","Cook ingredients in stages so each keeps its own texture.","Aim for contrast: one coloured element, one tender element and a clean finish."],
+core:["Warm a suitable pan over medium heat with a little suitable oil, if available.","Cook firm ingredients first, giving them room to colour rather than crowding the pan.","Add quicker-cooking ingredients later and turn as needed.","Check each component is tender and safely cooked before serving."],
+finish:["Use suitable pan juices to finish the dish and wipe the rim before serving.","Arrange ingredients in separate groups rather than piling everything in the centre.","Taste and adjust using seasonings you can safely eat.","Keep the main ingredient visible and use the others for colour and height."]
+},
+"Fried & crispy":{
+titles:["Crisp-edged skillet plate","Golden crunch composition","Pan-crisped signature dish","Crunch-and-tender plate"],
+open:["Dry ingredients well; surface moisture prevents browning.","Cut ingredients evenly so they cook at a similar pace.","Work in batches: a crowded pan steams food instead of crisping it.","Make the crisp element the star and add softer ingredients at the end."],
+core:["Heat a suitable pan with a little suitable oil if available.","Cook in a single layer and leave ingredients undisturbed until browned.","Turn when golden; lower the heat if the outside colours too quickly.","Keep cooked pieces on a clean plate while later batches finish."],
+finish:["Serve promptly while crisp edges are still at their best.","Keep softer ingredients away from crisp surfaces until serving.","Serve suitable pan juices beside the crisp element, not over it.","Arrange crunchy pieces in a loose stack with breathing room around them."]
+},
+"Grilled":{
+titles:["Char-marked centrepiece","Grilled colour-and-contrast plate","Flame-inspired signature dish","Grill-marked chef's plate"],
+open:["Cut the ingredients evenly so they cook at a similar pace.","Preheat the grill or grill pan and prepare ingredients for even contact.","Keep quick-cooking vegetables separate while the main component finishes.","Create colour from the grill and let the ingredients lead."],
+core:["Heat the grill or grill pan; cook in batches so the surface stays hot.","Turn when grill marks or golden colour have formed.","Move items away from intense heat if the outside browns too quickly.","Check everything is safely cooked; poultry should reach 75°C at the thickest point."],
+finish:["Rest suitable meat before slicing and keep raw-food utensils separate from cooked food.","Slice the main ingredient neatly and angle pieces to show the browned surface.","Use suitable cooking juices to keep the plate flavourful.","Place grilled ingredients beside moist elements to preserve charred texture."]
+},
+"Roasted":{
+titles:["Slow-roasted colour plate","Golden oven-roasted composition","Roast-and-rest signature plate","Caramelised tray-to-table dish"],
+open:["Heat the oven to 200°C (180°C fan) and cut firm vegetables evenly.","Keep ingredients in a single layer so they roast rather than steam.","Give ingredients space for their edges to caramelise.","Start with the ingredients that need longest and add quick-cooking items later."],
+core:["Use a suitable tray and a little oil if available.","Turn firm vegetables halfway through and check tenderness with a fork.","Follow reliable cooking guidance for meat or fish and check safe doneness.","If the tray browns too quickly, reduce heat and continue until fully cooked."],
+finish:["Rest suitable roasted meat before slicing and let vegetables steam off briefly.","Spoon suitable tray juices beside the main ingredient, not over crisp edges.","Arrange roast pieces by size and colour.","Save the best-coloured pieces for the top of the final arrangement."]
+},
+"Creamy & comforting":{
+titles:["Silky comfort bowl","Creamy layered skillet","Velvet-texture kitchen plate","Comfort-with-contrast bowl"],
+open:["Cut ingredients evenly and soften the firmest ingredients first.","Build flavour in layers instead of adding everything at once.","Keep heat moderate once a creamy ingredient is added.","Balance a soft texture with a few distinct pieces of your ingredients."],
+core:["Warm a suitable pan and cook firm ingredients first.","Add a small splash of water or suitable stock if the pan becomes dry.","Lower the heat before adding a creamy ingredient that fits your diet.","Simmer gently until tender and safely cooked."],
+finish:["Loosen a thick sauce with a little water or reduce a thin one gently.","Keep a few distinct pieces aside to place on top for texture.","Serve in a warm bowl and swirl sauce around the main ingredients.","Wipe the rim and finish with a restrained arrangement."]
+},
+"Fresh & light":{
+titles:["Fresh balanced plate","Bright garden-style composition","Clean and colourful plate","Light chef's arrangement"],
+open:["Wash and dry produce, then cut it into neat bite-sized pieces.","Keep fresh ingredients crisp and cook only what needs cooking.","Use contrasting shapes and colours to make the arrangement intentional.","Keep raw and ready-to-eat ingredients safely separated."],
+core:["Cook ingredients that need cooking and keep raw proteins separate.","If suitable oil and lemon juice or vinegar are available, mix a little dressing.","Add dressing gradually just before serving so fresh ingredients stay bright.","Check seasoning using ingredients you can safely eat."],
+finish:["Arrange ingredients in small groups, leaving space around them.","Cut some pieces on an angle to add shape contrast.","Add dressing lightly just before serving.","Keep delicate fresh ingredients on top so their colour stays visible."]
+}
+};
+
+const timeLevels={
+30:{name:"Clever & quick",note:"A focused recipe with one main technique, fewer pans and one simple finishing detail."},
+45:{name:"More depth",note:"Extra time adds a separate texture or side and a short pan-juice finish."},
+60:{name:"Chef's touch",note:"Stage the cooking, build a sauce or finishing element from your ingredients, and plate with contrast."},
+90:{name:"Full fine-dining-inspired experience",note:"The fullest technique plan: mise en place, separate components, a developed sauce if supported by your ingredients, resting and deliberate plating."}
+};
+
+function styleName(){return document.querySelector('input[name="style"]:checked').value}
+
+let invalidIngredients=[];
+
+function filteredIngredients(){
+  const raw=splitList($("ingredients").value);
+  invalidIngredients=raw.filter(item=>!isKnown(item));
+  if(invalidIngredients.length) return [];
+  const dislikes=splitList($("dislikes").value).map(lower);
+  const allergies=splitList($("allergies").value).map(lower);
+  let list=raw.filter(item=>!dislikes.some(d=>lower(item).includes(d)||d.includes(lower(item)))&&!allergies.some(a=>lower(item).includes(a)||a.includes(lower(item))));
+  const diet=$("diet").value;
+  if(["Vegetarian","Vegan"].includes(diet)) list=list.filter(item=>!containsAny(item,foodGroups.meat)&&!containsAny(item,foodGroups.fish));
+  if(diet==="Pescatarian") list=list.filter(item=>!containsAny(item,foodGroups.meat));
+  if(["Vegan","Dairy-free"].includes(diet)) list=list.filter(item=>!containsAny(item,foodGroups.dairy));
+  if(diet==="Gluten-free") list=list.filter(item=>!containsAny(item,foodGroups.gluten));
+  return list;
+}
+
+function containsAny(value,words){return words.some(word=>lower(value).includes(word))}
+
+function renderList(id,values){
+  const element=$(id);
+  element.replaceChildren();
+  values.forEach(text=>{
+    const li=document.createElement("li");
+    li.textContent=text;
+    element.append(li);
+  });
+}
+
+function renderChips(values){
+  const holder=$("recipeChips");
+  holder.replaceChildren();
+  values.forEach(text=>{
+    const span=document.createElement("span");
+    span.className="chip";
+    span.textContent=text;
+    holder.append(span);
+  });
+}
+
+function photoCategory(items,style){
+  const all=items.join(" ").toLowerCase();
+  if(containsAny(all,["salmon","cod","prawn","shrimp","tuna","fish","trout","haddock","crab","lobster","mackerel"])) return "fish";
+  if(containsAny(all,["chicken","turkey","duck"])) return "chicken";
+  if(containsAny(all,["steak","beef","lamb","pork","bacon","sausage"])) return "steak";
+  if(containsAny(all,["pasta","spaghetti","linguine","penne","macaroni","noodles"])) return "pasta";
+  if(style==="Fried & crispy") return "crispy";
+  if(containsAny(all,["potato","carrot","broccoli","cauliflower","spinach","courgette","aubergine","pepper","tomato","mushroom","lentil","chickpea","tofu"])) return "vegetables";
   return "general";
 }
-function escapeQuery(value){ return value.replace(/[<>"']/g," ").replace(/\s+/g," ").trim(); }
-function titleFor(style, main, second, version){
-  const styleData = styles[style] || styles["Surprise me"];
-  const label = styleData.titles[(version-1) % styleData.titles.length];
-  const secondPart = second ? " with " + second : "";
-  return label + ": " + main + secondPart;
-}
-function renderList(element, values){
-  element.replaceChildren();
-  values.forEach(value => { const li = document.createElement("li"); li.textContent = value; element.append(li); });
-}
-function renderChips(values){
-  const holder = $("recipeChips"); holder.replaceChildren();
-  values.forEach(value => { const span = document.createElement("span"); span.className = "chip"; span.textContent = value; holder.append(span); });
+
+const photos={
+chicken:["https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85"],
+fish:["https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85"],
+steak:["https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=85"],
+pasta:["https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=85"],
+crispy:["https://images.unsplash.com/photo-1570552896463-bfae371b9a39?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1562967914-608f82629710?auto=format&fit=crop&w=1200&q=85"],
+vegetables:["https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=1200&q=85"],
+general:["https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1200&q=85","https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1200&q=85"]
+};
+
+function imageQuery(items,style){
+  const words={"Fried & crispy":"crispy fried","Grilled":"grilled","Roasted":"roasted","Creamy & comforting":"creamy dish","Fresh & light":"fresh dish","Surprise me":"plated dish"};
+  return [items.slice(0,3).join(" ")+" "+words[style]+" recipe",items.slice(0,2).join(" ")+" food dish",items[0]+" recipe food"];
 }
 
-function buildSteps(style, level, version, items){
-  const recipe = styles[style] || styles["Surprise me"];
-  const variant = (version - 1) % recipe.openings.length;
-  const open = recipe.openings[variant];
-  const finish = recipe.finish[variant];
-  const steps = level === 90 ? [timeLevels[90].extra[0], open, ...recipe.core] : [open, ...recipe.core];
+async function updatePhoto(items,style,version){
+  const request=++state.request;
+  const image=$("recipeImage");
+  const category=photoCategory(items,style);
+  const fallbackList=photos[category]||photos.general;
+  const fallback=fallbackList[(version-1)%fallbackList.length];
+  image.src=fallback;
+  image.alt="Closest food photo search for "+items.join(", ");
+  $("photoStatus").textContent="Searching for a food photograph matching your ingredients…";
+  try{
+    let results=[];
+    for(const query of imageQuery(items,style)){
+      if(request!==state.request)return;
+      const url=new URL("https://commons.wikimedia.org/w/api.php");
+      url.search=new URLSearchParams({
+        action:"query",format:"json",origin:"*",generator:"search",
+        gsrsearch:"filetype:bitmap "+query,gsrnamespace:"6",gsrlimit:"15",
+        prop:"imageinfo",iiprop:"url|extmetadata",iiurlwidth:"1200"
+      }).toString();
+      const response=await fetch(url,{signal:AbortSignal.timeout(6000)});
+      if(!response.ok)continue;
+      const data=await response.json();
+      results=Object.values(data.query?.pages||{}).filter(page=>page.imageinfo?.[0]&&(page.imageinfo[0].thumburl||page.imageinfo[0].url));
+      if(results.length)break;
+    }
+    if(!results.length)throw new Error("No images found");
+    const tokens=items.slice(0,3).join(" ").toLowerCase().split(/[^a-z0-9]+/).filter(token=>token.length>2);
+    results.sort((a,b)=>scoreImage(b,tokens)-scoreImage(a,tokens));
+    const chosen=results.find(page=>!state.seenPhotos.includes(page.imageinfo[0].thumburl||page.imageinfo[0].url))||results[(version-1)%results.length];
+    const info=chosen.imageinfo[0],src=info.thumburl||info.url;
+    if(request!==state.request)return;
+    state.seenPhotos.push(src);
+    if(state.seenPhotos.length>20)state.seenPhotos.shift();
+    image.onerror=()=>{image.onerror=null;image.src=fallback};
+    image.src=src;
+    const metadata=info.extmetadata||{};
+    const title=(chosen.title||"Food photo").replace(/^File:/i,"");
+    const artist=metadata.Artist?.value?stripHtml(metadata.Artist.value):"";
+    const licence=metadata.LicenseShortName?.value?stripHtml(metadata.LicenseShortName.value):"licence information";
+    const link=document.createElement("a");
+    link.href=info.descriptionurl||"https://commons.wikimedia.org";
+    link.target="_blank";
+    link.rel="noopener noreferrer";
+    link.textContent="Photo: "+title+(artist?" · "+artist:"")+" · "+licence;
+    $("photoStatus").replaceChildren(link);
+  }catch(error){
+    if(request!==state.request)return;
+    $("photoStatus").textContent="Showing a similar free food photo. The picture may not exactly match your custom recipe.";
+  }
+}
 
-  // Each new version adds a different technique while respecting the chosen style.
-  const alternatives = {
-    "Surprise me": [
-      "Keep the ingredients separate while cooking, then bring them together only at the end.",
-      "Cook the main ingredient first and use the same pan for a quick flavourful finish.",
-      "Cut a few pieces smaller so they cook faster and create a different texture.",
-      "Reserve the most colourful pieces for the top of the plate."
-    ],
-    "Fried & crispy": [
-      "For this version, crisp ingredients in batches and keep finished pieces uncovered so they stay crunchy.",
-      "Try a light, even coating only if you already have a suitable coating ingredient; otherwise dry surfaces well.",
-      "Use two heat levels: brown first, then lower the heat to cook the centres through.",
-      "Keep juicy ingredients separate until serving so they do not soften the crisp surfaces."
-    ],
-    "Grilled": [
-      "For this version, grill the main ingredient first and cook delicate vegetables afterwards.",
-      "Turn the pieces at different angles for more even colour, without repeatedly moving them.",
-      "Cut the cooked main ingredient into neat slices only after it has rested if appropriate.",
-      "Keep the most charred pieces as accents and arrange the rest in a loose fan."
-    ],
-    "Roasted": [
-      "For this version, spread ingredients over two areas of the tray so softer items can be removed sooner.",
-      "Turn only once or twice; leaving surfaces in contact with the hot tray helps them colour.",
-      "If suitable, use a small splash of water to loosen browned tray juices and spoon them around the dish.",
-      "Remove delicate ingredients earlier if they become tender before the firmer ingredients."
-    ],
-    "Creamy & comforting": [
-      "For this version, keep a little of the main ingredient aside to add on top for texture.",
-      "Add liquid gradually and simmer gently rather than boiling the creamy component hard.",
-      "If suitable ingredients are available, mash or blend part of the cooked vegetables to thicken the sauce.",
-      "Finish with the sauce around the ingredients rather than covering every surface."
-    ],
-    "Fresh & light": [
-      "For this version, leave a few ingredients raw only if they are safe to eat raw; cook everything else fully.",
-      "Keep the dressing separate until the last moment so the ingredients retain their texture.",
-      "Slice ingredients into different shapes for contrast while keeping the pieces bite-sized.",
-      "Use the most colourful fresh ingredients as the final garnish."
-    ]
-  };
-  steps.push((alternatives[style] || alternatives["Surprise me"])[variant]);
+function scoreImage(page,tokens){
+  const name=(page.title||"").toLowerCase();
+  return tokens.reduce((score,token)=>score+(name.includes(token)?5:0),0);
+}
 
-  if (level >= 45) steps.push(...timeLevels[45].extra);
-  if (level >= 60) steps.push(...timeLevels[60].extra);
-  if (level >= 90) steps.push(...timeLevels[90].extra.slice(1));
-  steps.push(finish);
-  steps.push("Before serving, check every component is safely cooked and suitable for your dietary and allergy needs.");
+function stripHtml(value){
+  const element=document.createElement("div");
+  element.innerHTML=value;
+  return (element.textContent||"").replace(/\s+/g," ").trim();
+}
+
+function buildSteps(style,level,version){
+  const recipe=recipes[style]||recipes["Surprise me"];
+  const index=(version-1)%recipe.open.length;
+  const steps=[recipe.open[index],...recipe.core];
+  const variations=[
+    "Keep the ingredients separate while cooking, then combine them at the end.",
+    "Cook the main ingredient first and use the same pan for a flavourful finish.",
+    "Cut a few pieces smaller so they cook faster and create contrasting textures.",
+    "Reserve the best-coloured pieces to finish the plate."
+  ];
+  steps.push(variations[index]);
+  if(level>=45)steps.push("If suitable ingredients are available, cook a supporting component separately so its texture stays distinct.");
+  if(level>=60)steps.push("Build a quick pan sauce from suitable browned bits and a small splash of water; simmer gently and taste.","Prepare the supporting ingredients before the final cooking stage, then keep them warm or crisp.");
+  if(level>=90)steps.push("Set up your mise en place: cut and group the ingredients before cooking.","Cook the longest-running component first, then make a second texture or side in a separate pan if your ingredients support it.","Rest suitable meat, keep crisp components uncovered, and bring everything together just before plating.","Plate in layers: sauce or soft component first if available, main ingredient next, contrasting textures last. Wipe the rim before serving.");
+  steps.push(recipe.finish[index],"Check that each component is safely cooked and suitable for your dietary and allergy needs.");
   return steps;
 }
 
-function qualityText(level){
-  const setting = timeLevels[level];
-  $("qualityTitle").textContent = level + " minutes · " + setting.name;
-  $("qualityText").textContent = setting.note;
-}
-
-function getImageSearchTerms(title, items, style){
-  const main = items[0] || "food";
-  const second = items[1] || "";
-  const styleWords = {"Fried & crispy":"crispy fried","Grilled":"grilled","Roasted":"roasted","Creamy & comforting":"creamy","Fresh & light":"fresh","Surprise me":"plated"}[style] || "plated";
-  // Search for the actual ingredients first, then relax the terms if Commons has no close result.
-  return [
-    escapeQuery([main, second, styleWords, "food"].filter(Boolean).join(" ")),
-    escapeQuery([main, second, "recipe food"].filter(Boolean).join(" ")),
-    escapeQuery(main + " food dish"),
-    escapeQuery(styleWords + " food dish"),
-    "plated food dish"
-  ];
-}
-
-function cleanMetadata(value){
-  if(!value) return "";
-  const temp = document.createElement("div"); temp.innerHTML = value;
-  return (temp.textContent || temp.innerText || "").replace(/\s+/g," ").trim();
-}
-function setPhotoStatus(message, link){
-  const box = $("photoStatus"); box.replaceChildren();
-  if (link){ const a = document.createElement("a"); a.href = link; a.target = "_blank"; a.rel = "noopener noreferrer"; a.textContent = message; box.append(a); }
-  else box.textContent = message;
-}
-
-async function updateRecipePhoto(title, items, style, version){
-  const myRequest = ++state.requestNumber;
-  const img = $("recipeImage");
-  const fallbackList = fallbackPhotos[getFoodCategory(items,style)] || fallbackPhotos.general;
-  const fallback = fallbackList[(version-1) % fallbackList.length];
-  img.alt = "Closest free food-photo match for " + items.slice(0,3).join(", ") + " in the " + style + " style";
-  img.onerror = () => { img.onerror = null; img.src = fallback; setPhotoStatus("Showing a similar food inspiration photo. The photo may not be the exact custom recipe."); };
-  img.src = fallback;
-  setPhotoStatus("Finding the closest free photo for your ingredients and cooking style…");
-  const queries = getImageSearchTerms(title,items,style);
-  try{
-    let pages = [];
-    for (const terms of queries.slice(0,3)) {
-      if (myRequest !== state.requestNumber) return;
-      const url = new URL("https://commons.wikimedia.org/w/api.php");
-      url.search = new URLSearchParams({
-        action:"query", format:"json", origin:"*", generator:"search",
-        gsrsearch:"filetype:bitmap " + terms, gsrnamespace:"6", gsrlimit:"20",
-        prop:"imageinfo", iiprop:"url|extmetadata", iiurlwidth:"1200"
-      }).toString();
-      const response = await fetch(url.toString(), {signal: AbortSignal.timeout(6000)});
-      if(!response.ok) continue;
-      const data = await response.json();
-      pages = Object.values(data.query?.pages || {}).filter(page => {
-        const name = (page.title || "").toLowerCase();
-        return /\.(jpe?g|png|webp)$/i.test(name) && page.imageinfo && page.imageinfo[0] && (page.imageinfo[0].thumburl || page.imageinfo[0].url);
-      });
-      if (pages.length) break;
-    }
-    if(!pages.length) throw new Error("No close photo found");
-    const foodTokens = items.slice(0,3).join(" ").toLowerCase().split(/[^a-z0-9]+/).filter(token=>token.length>2);
-    const ranked = pages.map(page => {
-      const name = (page.title || "").replace(/^File:/i,"").toLowerCase();
-      const score = foodTokens.reduce((sum,token)=>sum+(name.includes(token)?5:0),0)
-        + (name.includes(style.toLowerCase().split(" ")[0]) ? 1 : 0);
-      return {page,score};
-    }).sort((a,b)=>b.score-a.score);
-    let candidates = ranked.filter(entry=>entry.score>0);
-    if(!candidates.length) candidates = ranked;
-    let chosen = candidates.find(entry => {
-      const info = entry.page.imageinfo[0];
-      return !state.seenPhotoUrls.includes(info.thumburl || info.url);
-    });
-    if(!chosen) {
-      state.seenPhotoUrls = [];
-      chosen = candidates[(version-1) % candidates.length];
-    }
-    const fresh = chosen.page;
-    const info = fresh.imageinfo[0];
-    const imageURL = info.thumburl || info.url;
-    if(myRequest !== state.requestNumber) return;
-    state.lastPhotoUrl = imageURL;
-    state.seenPhotoUrls.push(imageURL);
-    if (state.seenPhotoUrls.length > 12) state.seenPhotoUrls.shift();
-    img.onerror = () => { img.onerror = null; img.src = fallback; setPhotoStatus("Showing a similar food inspiration photo. The exact dish may look different."); };
-    img.src = imageURL;
-    const meta = info.extmetadata || {};
-    const titleText = (fresh.title || "Food photograph").replace(/^File:/i,"");
-    const license = cleanMetadata(meta.LicenseShortName?.value) || "Wikimedia Commons image";
-    const artist = cleanMetadata(meta.Artist?.value);
-    const attribution = "Photo: " + titleText + (artist ? " · " + artist : "") + " · " + license;
-    setPhotoStatus(attribution, info.descriptionurl || fresh.fullurl || "https://commons.wikimedia.org/");
-  }catch(error){
-    if(myRequest !== state.requestNumber) return;
-    img.onerror = () => { img.onerror = null; setPhotoStatus("A matching photo could not be loaded right now."); };
-    img.src = fallback;
-    setPhotoStatus("Showing a similar food inspiration photo. The photo may not be the exact custom recipe.");
-  }
+function showError(message){
+  state.request++;
+  $("resultPanel").classList.remove("visible");
+  $("resultPanel").setAttribute("aria-busy","false");
+  $("error").textContent=message;
+  $("createButton").disabled=false;
+  $("createButton").textContent="✦ CREATE MY FINE-DINING RECIPE →";
+  $("anotherButton").disabled=false;
 }
 
 function generateRecipe(event){
-  if(event) event.preventDefault();
-  $("error").textContent = "";
-  const ingredientsText = $("ingredients").value.trim();
-  if(!ingredientsText){ $("error").textContent="Add your ingredients first, bro, then let's cook."; $("ingredients").focus(); return; }
-  let ingredients = getFilteredIngredients();
-  if(!ingredients.length){ $("error").textContent="Your exclusions removed all the ingredients. Add a few safe ingredients or adjust your preferences."; return; }
-  state.version += 1;
-  const version = state.version;
-  const style = chooseStyle();
-  const time = Number($("time").value);
-  const servings = $("servings").value;
-  const main = ingredients[0];
-  const second = ingredients[1] || "your favourite supporting ingredients";
-  const title = titleFor(style,main,ingredients[1],version);
-  const recipe = styles[style] || styles["Surprise me"];
-  const intro = recipe.openings[(version-1)%recipe.openings.length];
+  if(event)event.preventDefault();
+  $("error").textContent="";
+  const raw=splitList($("ingredients").value);
+  if(!raw.length){
+    showError("Please enter food ingredients first, such as chicken, potatoes, rice or tomatoes.");
+    return;
+  }
+  const ingredients=filteredIngredients();
+  if(invalidIngredients.length){
+    showError("The ingredients you mentioned were invalid: "+invalidIngredients.map(item=>"“"+item+"”").join(", ")+". Please remove them or correct the spelling. Examples of recognised foods include chicken, potatoes, rice, tomatoes, beans, basil and tofu.");
+    return;
+  }
+  if(!ingredients.length){
+    showError("Your dislikes or dietary preference removed all ingredients. Add suitable food ingredients or review those settings.");
+    return;
+  }
 
-  $("recipeTitle").textContent = title;
-  $("recipeIntro").textContent = intro + " This version takes the " + timeLevels[time].name.toLowerCase() + " approach.";
-  $("versionTag").textContent = "VERSION " + String(version).padStart(2,"0");
-  $("anotherButton").textContent = "↻ CREATE ANOTHER VERSION · NEXT IDEA";
-  $("resultEyebrow").textContent = "YOUR RECIPE · " + style.toUpperCase();
-  renderChips([style, $("diet").value, time + " min", servings + (servings === "1" ? " serving" : " servings"), "Version " + version]);
-  renderList($("recipeIngredients"),ingredients);
-  renderList($("recipeSteps"),buildSteps(style,time,version,ingredients));
-  qualityText(time);
-  $("chefNote").textContent = "Photo matching searches Wikimedia Commons for a food image based on your recipe and ingredients. It aims to find a relevant dish photo, but cannot promise that the pictured plate exactly matches your custom recipe. This free recipe builder uses rules, not AI; its allergy filter cannot guarantee safety. Check labels and prevent cross-contact.";
+  const version=++state.version;
+  const style=styleName();
+  const time=Number($("time").value);
+  const servings=$("servings").value;
+  const recipe=recipes[style]||recipes["Surprise me"];
+  const index=(version-1)%recipe.titles.length;
+  const main=ingredients[0];
+  const title=recipe.titles[index]+": "+main+(ingredients[1]?" with "+ingredients[1]:"");
+
+  $("recipeTitle").textContent=title;
+  $("recipeIntro").textContent=recipe.open[index]+" This version takes the "+timeLevels[time].name.toLowerCase()+" approach.";
+  $("versionTag").textContent="VERSION "+String(version).padStart(2,"0");
+  $("resultEyebrow").textContent="YOUR RECIPE · "+style.toUpperCase();
+  renderChips([style,$("diet").value,time+" min",servings+(servings==="1"?" serving":" servings"),"Version "+version]);
+  renderList("recipeIngredients",ingredients);
+  renderList("recipeSteps",buildSteps(style,time,version));
+  $("qualityTitle").textContent=time+" minutes · "+timeLevels[time].name;
+  $("qualityText").textContent=timeLevels[time].note;
+  $("chefNote").textContent="This recipe builder uses a broad built-in food list and simple cooking rules, not AI. Photos are the closest free online match found and may not depict this exact custom recipe. Ingredient validation and dietary filters cannot guarantee food or allergy safety: check labels and prevent cross-contact.";
   $("resultPanel").classList.add("visible");
   $("resultPanel").setAttribute("aria-busy","true");
-  $("anotherButton").disabled = false;
-  $("anotherButton").textContent = "↻ CREATE ANOTHER VERSION · NEXT IDEA";
-  $("createButton").disabled = true;
-  $("createButton").textContent = "CREATING YOUR RECIPE…";
+  $("anotherButton").disabled=false;
+  $("createButton").disabled=true;
+  $("createButton").textContent="CREATING YOUR RECIPE…";
   $("resultPanel").scrollIntoView({behavior:"smooth",block:"start"});
-  updateRecipePhoto(title,ingredients,style,version).finally(()=>{
-    if (version !== state.version) return;
-    $("anotherButton").disabled = false;
-    $("anotherButton").textContent = "↻ CREATE ANOTHER VERSION · NEXT IDEA";
+
+  updatePhoto(ingredients,style,version).finally(()=>{
+    if(version!==state.version)return;
     $("resultPanel").setAttribute("aria-busy","false");
-    $("createButton").disabled = false;
-    $("createButton").textContent = "✦ CREATE MY FINE-DINING RECIPE →";
+    $("createButton").disabled=false;
+    $("createButton").textContent="✦ CREATE MY FINE-DINING RECIPE →";
+  });
+}
+
+function renderChips(values){
+  const holder=$("recipeChips");
+  holder.replaceChildren();
+  values.forEach(text=>{
+    const span=document.createElement("span");
+    span.className="chip";
+    span.textContent=text;
+    holder.append(span);
   });
 }
 
